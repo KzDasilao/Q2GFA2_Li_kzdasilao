@@ -1,5 +1,5 @@
-.background{
-    background-image: url(/images/galaxy.jpg);
+   .background{
+    background-image: url(images/galaxy.jpg);
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
@@ -27,7 +27,7 @@ h1{
     animation-iteration-count: infinite;
 }
 #ice{
-    background: url(/style/ice.gif);
+    background: url(style/ice.gif);
     width: 200px;
     height: 200px;
     transform: translate(100vw,-20vh);
@@ -38,7 +38,7 @@ h1{
 
 }
 #gasgiant{
-    background: url(/style/gasgiant.gif);
+    background: url(style/gasgiant.gif);
     width: 310px;
     height: 300px;
     transform: translate(-100vw,-20vh);
@@ -48,7 +48,7 @@ h1{
     animation: transright2 30s linear 2s infinite;
 }
 #star{
-    background: url(/style/star.gif);
+    background: url(style/star.gif);
     width: 300px;
     height: 300px;
     transform: translate(-100vw,-20vh);
