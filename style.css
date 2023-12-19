@@ -1,0 +1,98 @@
+.background{
+    background-image: url(/images/galaxy.jpg);
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    position: fixed;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    text-shadow: 2px 2px white;
+    color: rgb(232, 115, 255);
+    margin-top: 10vh;
+    position: relative;
+}
+
+.planet{
+    display: inline-block;
+    transform: translateX(100%);
+    transform: rotateX('angle');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-iteration-count: infinite;
+}
+#ice{
+    background: url(/style/ice.gif);
+    width: 200px;
+    height: 200px;
+    transform: translate(100vw,-20vh);
+    transition: 10s;
+    animation-duration:10s ;
+    animation: transright1 25s ease 0s infinite;
+    animation-iteration-count: infinite;
+
+}
+#gasgiant{
+    background: url(/style/gasgiant.gif);
+    width: 310px;
+    height: 300px;
+    transform: translate(-100vw,-20vh);
+    animation-name: aquamotion;
+    animation-duration:10s ;
+    animation-iteration-count: infinite;
+    animation: transright2 30s linear 2s infinite;
+}
+#star{
+    background: url(/style/star.gif);
+    width: 300px;
+    height: 300px;
+    transform: translate(-100vw,-20vh);
+    transition: 15s;
+    animation-duration:10s ;
+    animation-iteration-count: infinite;
+    animation: transright3 15s ease-in-out 5s infinite;
+}
+@keyframes transright1 {
+    from {
+        transform: rotateX(200vw);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes transright2 {
+    from {
+        transform: translatex(100vw);
+    }
+    to {
+        transform: translatey(-100%);
+    }
+}
+
+@keyframes transright3 {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: rotateX(-100%);
+    }
+}
+.Fa2{
+    float:left;
+}
+
+.name{
+    float:right;
+}
+p{
+    color: rgb(122, 149, 255);
+    margin:10px;
+    font-size: larger;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
